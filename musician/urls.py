@@ -6,7 +6,7 @@ from musician.views import MusicianViewSet
 router = routers.DefaultRouter()
 router.register(r"musician", MusicianViewSet, basename="manage")
 urlpatterns = [
-    path('api/music/', include(router.urls)),
+    path("api/music/", include(router.urls)),
 ]
 
 app_name = "musician"
